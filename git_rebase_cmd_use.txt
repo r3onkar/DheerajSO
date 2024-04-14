@@ -1,0 +1,128 @@
+~/Desktop/onkar3/DheerajSO (main) » git checkout -b feature3/sahil                                                                                               sahil@Sahils-Air
+Switched to a new branch 'feature3/sahil'
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil) » touch v1.txt                                                                                                       sahil@Sahils-Air
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil*) » git add .                                                                                                         sahil@Sahils-Air
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil*) » git status                                                                                                        sahil@Sahils-Air
+On branch feature3/sahil
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   v1.txt
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil*) » git commit -m "create v1 text file"                                                                               sahil@Sahils-Air
+[feature3/sahil 251e1bd] create v1 text file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 v1.txt
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil) » touch v2.txt                                                                                                       sahil@Sahils-Air
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil*) » git add .                                                                                                         sahil@Sahils-Air
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil*) » git status                                                                                                        sahil@Sahils-Air
+On branch feature3/sahil
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   v2.txt
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil*) » git commit -m "create v2 text file"                                                                               sahil@Sahils-Air
+[feature3/sahil 6de2092] create v2 text file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 v2.txt
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil) » touch v3.txt                                                                                                       sahil@Sahils-Air
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil*) » git add .                                                                                                         sahil@Sahils-Air
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil*) » git status                                                                                                        sahil@Sahils-Air
+On branch feature3/sahil
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   v3.txt
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil*) » git commit -m "create v3 text file"                                                                               sahil@Sahils-Air
+[feature3/sahil f973e37] create v3 text file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 v3.txt
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil) » git log                                                                                                            sahil@Sahils-Air
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil) » git status                                                                                                         sahil@Sahils-Air
+On branch feature3/sahil
+nothing to commit, working tree clean
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil) » git log                                                                                                            sahil@Sahils-Air
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil) » git checkout main                                                                                                  sahil@Sahils-Air
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (main) » git pull                                                                                                                     sahil@Sahils-Air
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 2), reused 2 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), 1.13 KiB | 230.00 KiB/s, done.
+From https://github.com/r3onkar/DheerajSO
+   a7b3083..ecd517b  main            -> origin/main
+ * [new branch]      feature/sourabh -> origin/feature/sourabh
+Updating a7b3083..ecd517b
+Fast-forward
+ s1.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 s1.txt
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (main) » ls                                                                                                                           sahil@Sahils-Air
+DhrreSo.txt                           Screenshot 2024-04-14 at 20.27.01.png git_conflict_resolve.txt              s1.txt
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (main) » git checkout feature3/sahil                                                                                                  sahil@Sahils-Air
+Switched to branch 'feature3/sahil'
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil) » ls                                                                                                                 sahil@Sahils-Air
+DhrreSo.txt                           git_conflict_resolve.txt              v2.txt
+Screenshot 2024-04-14 at 20.27.01.png v1.txt                                v3.txt
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil) » git log                                                                                                            sahil@Sahils-Air
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil) » git checkout main                                                                                                  sahil@Sahils-Air
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (main) » git pull                                                                                                                     sahil@Sahils-Air
+Already up to date.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (main) » git checkout feature3/sahil                                                                                                  sahil@Sahils-Air
+Switched to branch 'feature3/sahil'
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil) » ls                                                                                                                 sahil@Sahils-Air
+DhrreSo.txt                           git_conflict_resolve.txt              v2.txt
+Screenshot 2024-04-14 at 20.27.01.png v1.txt                                v3.txt
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil) » git rebase main                                                                                                    sahil@Sahils-Air
+Successfully rebased and updated refs/heads/feature3/sahil.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil) » git log                                                                                                            sahil@Sahils-Air
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil) » git status                                                                                                         sahil@Sahils-Air
+On branch feature3/sahil
+nothing to commit, working tree clean
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+~/Desktop/onkar3/DheerajSO (feature3/sahil) » git push origin feature3/sahil                                                                                     sahil@Sahils-Air
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 630 bytes | 630.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'feature3/sahil' on GitHub by visiting:
+remote:      https://github.com/r3onkar/DheerajSO/pull/new/feature3/sahil
+remote: 
+To https://github.com/r3onkar/DheerajSO.git
+ * [new branch]      feature3/sahil -> feature3/sahil
+------------------------------------------------------------------------
