@@ -1,0 +1,215 @@
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (main)
+$ ls
+DhrreSo.txt
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (main)
+$ vi DhrreSo.txt
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (main)
+$ git reset --hard HEAD~1
+fatal: ambiguous argument 'HEAD~1': unknown revision or path not in the working
+tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   DhrreSo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (main)
+$ git restore DhrreSo.txt
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (main)
+$ git checkout -b feature/sourabh
+Switched to a new branch 'feature/sourabh'
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh)
+$ vi DhrreSo.txt
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh)
+$ git status
+On branch feature/sourabh
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   DhrreSo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh)
+$ git add .
+warning: in the working copy of 'DhrreSo.txt', LF will be replaced by CRLF the n
+ext time Git touches it
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh)
+$ git status
+On branch feature/sourabh
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   DhrreSo.txt
+
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh)
+$ git commit -m "sourabh's commit"
+[feature/sourabh 7f4eaa2] sourabh's commit
+ 1 file changed, 1 insertion(+)
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh)
+$ git push origin feature/sourabh
+info: please complete authentication in your browser...
+fatal: Access is denied
+
+
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh)
+$ git config global --user.name
+error: key does not contain a section: global
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh)
+$ git config --global user.name
+sourabh8581
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh)
+$ git config --global user.email
+sourabhmali2017@gmail.com
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh)
+$ git push origin feature/sourabh
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 445 bytes | 445.00 KiB/s, done.
+Total 6 (delta 0), reused 3 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature/sourabh' on GitHub by visiting:
+remote:      https://github.com/r3onkar/DheerajSO/pull/new/feature/sourabh
+remote:
+To https://github.com/r3onkar/DheerajSO.git
+ * [new branch]      feature/sourabh -> feature/sourabh
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (main)
+$ ls
+DhrreSo.txt
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (main)
+$ vi DhrreSo.txt
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (main)
+$ git pull
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 1), reused 2 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 1.06 KiB | 8.00 KiB/s, done.
+From https://github.com/r3onkar/DheerajSO
+   86ede91..20d3f25  main       -> origin/main
+Updating 86ede91..20d3f25
+Fast-forward
+ DhrreSo.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (main)
+$ ls
+DhrreSo.txt
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (main)
+$ vi DhrreSo.txt
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (main)
+$ git checkout feature/sourabh
+Switched to branch 'feature/sourabh'
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh)
+$ ls
+DhrreSo.txt
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh)
+$ vi DhrreSo.txt
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh)
+$ git merge main
+Auto-merging DhrreSo.txt
+CONFLICT (content): Merge conflict in DhrreSo.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh|MERGING)
+$ ls
+DhrreSo.txt
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh|MERGING)
+$ vi DhrreSo.txt
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh|MERGING)
+$ git branch --list
+* feature/sourabh
+  main
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh|MERGING)
+$ vi DhrreSo.txt
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh|MERGING)
+$ git status
+On branch feature/sourabh
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   DhrreSo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh|MERGING)
+$ git add .
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh|MERGING)
+$ git commit -m "reslove conflict"
+[feature/sourabh 2a42801] reslove conflict
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh)
+$ git push
+fatal: The current branch feature/sourabh has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature/sourabh
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh)
+$ git push origin feature/sourabh
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 345 bytes | 345.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/r3onkar/DheerajSO.git
+   7f4eaa2..2a42801  feature/sourabh -> feature/sourabh
+
+LENOVO@DESKTOP-T2NU3NO MINGW64 /f/git practice/DheerajSO (feature/sourabh)
+$
